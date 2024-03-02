@@ -1,0 +1,60 @@
+@use "_colors" as color;
+.card-box{
+    //border: 2px solid red;
+    display: flex;
+    height:230px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 10px 0px;
+}
+.line{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.line > span >img{
+    margin-top: 10px;
+   width: 50px;
+    height: 50px;
+   // border: 2px solid red; 
+}
+.ln{
+   height: 7rem;
+    border-left: 5px solid blue;
+}
+.card{
+    //border: 2px solid black;
+    box-shadow: 2px 2px 5px rgb(165, 138, 138);
+    display: flex;
+    border-radius: 20px;
+    height: 10rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    padding: 10px 5px;
+    
+}
+.card span{
+    background-image: color.$linear;
+    border-radius: 20px;
+    padding:6px 10px;
+    
+}
+.card h2{
+    margin: 4px;
+    font:700 1rem normal;
+}
+.card h1{
+    
+    font:700 1.8rem normal;
+}
+@media screen and (max-width:500px) {
+    .card h1{
+        
+        font:600 1.3rem normal;
+    }
+}

@@ -1,0 +1,79 @@
+@use "_colors" as color;
+.form{
+   // border: 2px solid black;
+    width: 60%;
+    padding: 0.8rem;
+    margin: auto;
+    margin-top: 2rem;
+    box-shadow:inset 2px 2px 5px gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.form h1{
+    text-align: center;
+    >span{
+        color: color.$orange;
+    }
+}
+.form legend{
+    font:600 27px normal;
+}
+.form legend span{
+color: color.$orange;
+font:600 27px normal;
+}
+.form form{
+   margin: auto;
+   // border: 2px solid green;
+    height: fit-content;
+    width: 90%;
+}
+.form .box{
+    display: flex;
+    width: 98%;
+    align-items: center;
+   
+    //border: 2px solid blue;
+    margin: 0.6rem 0px;
+}
+.form .box label{
+    height: 30px;
+    width:7rem;
+}
+#msg{
+    height: 70px;
+}
+.form .box input,textarea{
+    width: 100%;
+    height: 30px;
+    font: 500 17px normal;
+}
+.form label{
+    font: 600 17px normal;
+}
+.btn{
+    background-image: linear-gradient(yellow,orange);
+    padding: 0.5rem 0.9rem;
+    border-radius: 20px;
+    font:700 19px normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 43px;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:400px){
+    .form{
+       // border: 2px solid black;
+        width: 100%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+}

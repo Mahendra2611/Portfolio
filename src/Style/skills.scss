@@ -1,0 +1,52 @@
+@use "_colors" as color;
+.skills{
+    //border: 2px solid red;
+    //box-shadow: 2px 2px 5px green($color: #000000);
+    box-shadow:inset 2px 2px 5px gray;
+  border-radius: 10px;
+   overflow: hidden;
+}
+.skills > h1 {
+text-align: center;
+    >span  {
+        color: color.$orange;
+    } 
+}
+.slider{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 0px 1rem;
+    gap: 10px; 
+   // border: 2px solid red;
+    overflow: hidden;
+   
+}
+
+.skills > .slider > .box{
+    display: block;
+   width: 250px;
+   
+text-align: center;
+   font: 800 18px normal;
+   width: 200px;
+   height: 30px;
+    //border: 2px solid black;
+    border-radius: 10px;
+    background-color: bisque;
+    padding: 5px 7px;
+    box-shadow: inset 2px 2px 10px 5px rgba(204, 93, 65, 0.9),inset -10px -10px 10px -0.5px rgba(233, 235, 228, 0.9);
+    //background-image:linear-gradient(yellow,orange);
+}
+@media screen and (max-width:900px) {
+    .skills > .slider > .box{
+        width: fit-content;
+     }
+     .slider{
+        display: flex;
+        padding: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+     }
+}

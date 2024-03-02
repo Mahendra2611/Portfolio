@@ -1,0 +1,87 @@
+@use "_colors" as color;
+
+.intro{
+   // border: 2px solid red;
+    display: flex;
+    box-shadow:inset 2px 2px 5px gray;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+.content{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+   gap: 20px
+}
+.content > h1{
+    font: 600 39px normal;
+    margin: 0px;
+}
+.intro > .img{
+    flex :1 1 50%;
+   // border: 2px solid black;
+   display: flex;
+   justify-content: center;
+   background-image: url(../img/Vector2.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+  
+}
+.intro > .img >img{
+   
+width: 50%;
+height: 50%;
+border-radius: 50%;
+
+}
+.intro p{
+    //border: 2px solid red;
+    font:600 1.2rem normal;
+}
+.content > .name{
+    color: color.$orange;
+}
+#btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 22px;
+    
+    background-image: color.$linear;
+    font:   bold 18px normal;
+}
+.content > #btn:hover{
+    transform: translate(0.8);
+    background-color: red;
+}
+.social > img{
+height: 33px;
+margin: 18px 28px 0px 0px ;
+}
+@media screen and (max-width:900px) {
+    .intro{
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+        gap: 5px;
+    }
+    .content{
+        order: 2;
+    }
+    .content > h1{
+        font: 600 29px normal;
+    }
+    .social > img{
+        height: 19px;
+        margin: 12px 12px 0px 0px ;
+        }
+        .intro p{
+           // border: 2px solid red;
+            font:600 1rem normal;
+        }
+}

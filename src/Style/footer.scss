@@ -1,0 +1,46 @@
+@use "_colors" as color;
+.footer{
+    margin:1rem  ;
+    box-shadow:inset 2px 2px 5px gray;
+    border-radius: 10px;
+    //border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   gap: 0.8rem;
+}
+.footer h2{
+    margin: 1px;
+    font: 600 1rem normal;
+    color: color.$orange;
+   // border: 2px solid red;
+}
+// .fb{
+//   border: 2px solid red;
+// }
+.footer h1{
+    margin: 5px;
+   
+}
+.footer .media img{
+   height: 2rem;
+   margin: 10px 2rem;
+}
+.footer p{
+    margin-top: 10px;
+    color: color.$orange
+}
+@media screen and (max-width:550px) {
+    .footer .media img{
+        height: 2rem;
+        margin: 0px 0.6rem;
+     }
+     .footer{
+        align-items: flex-start;
+        
+     }
+     .footer h1{
+       font-size: 20px;
+    }
+}
